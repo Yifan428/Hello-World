@@ -21,46 +21,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyH-JP-ymz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0L-sh-5VZ">
                                 <rect key="frame" x="152" y="40" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w06-hB-m5g">
-                                <rect key="frame" x="169" y="111" width="36" height="30"/>
-                                <state key="normal" title="Clear"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E81-E2-dmg">
+                                <rect key="frame" x="171" y="79" width="33" height="30"/>
+                                <state key="normal" title="hello"/>
                                 <connections>
-                                    <action selector="clearSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8az-pN-sFt"/>
+                                    <action selector="helloSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyL-Wa-N22"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrP-fp-isZ">
-                                <rect key="frame" x="170" y="71" width="35" height="30"/>
-                                <state key="normal" title="Hello"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VD-2y-ag5">
+                                <rect key="frame" x="170" y="119" width="34" height="30"/>
+                                <state key="normal" title="clear"/>
                                 <connections>
-                                    <action selector="helloSected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrd-2c-W7g"/>
-                                    <action selector="helloSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ntV-Ib-c8j"/>
+                                    <action selector="clearSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nAj-NQ-drV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VyH-JP-ymz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="FD0-XY-R63"/>
-                            <constraint firstItem="zrP-fp-isZ" firstAttribute="centerX" secondItem="VyH-JP-ymz" secondAttribute="centerX" id="SLa-vg-NB1"/>
-                            <constraint firstItem="zrP-fp-isZ" firstAttribute="top" secondItem="VyH-JP-ymz" secondAttribute="bottom" constant="10" id="jgh-h0-ebR"/>
-                            <constraint firstItem="w06-hB-m5g" firstAttribute="top" secondItem="zrP-fp-isZ" secondAttribute="bottom" constant="10" id="kQK-np-G5r"/>
-                            <constraint firstItem="VyH-JP-ymz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lDC-9T-W1y"/>
-                            <constraint firstItem="w06-hB-m5g" firstAttribute="centerX" secondItem="zrP-fp-isZ" secondAttribute="centerX" id="pRE-hL-2fT"/>
+                            <constraint firstItem="1VD-2y-ag5" firstAttribute="top" secondItem="E81-E2-dmg" secondAttribute="bottom" constant="10" id="IRH-pt-CUy"/>
+                            <constraint firstItem="E81-E2-dmg" firstAttribute="top" secondItem="U0L-sh-5VZ" secondAttribute="bottom" constant="18" id="Mb8-fl-Rbb"/>
+                            <constraint firstItem="U0L-sh-5VZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RTU-9y-W3P"/>
+                            <constraint firstItem="U0L-sh-5VZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="XLd-lL-5ff"/>
+                            <constraint firstItem="E81-E2-dmg" firstAttribute="centerX" secondItem="U0L-sh-5VZ" secondAttribute="centerX" id="ZKU-Fm-feY"/>
+                            <constraint firstItem="1VD-2y-ag5" firstAttribute="centerX" secondItem="E81-E2-dmg" secondAttribute="centerX" id="ram-w6-EZc"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="InfoLabel" destination="VyH-JP-ymz" id="XGo-Ns-ne2"/>
-                        <outlet property="infoLabel" destination="VyH-JP-ymz" id="rpR-AZ-ek3"/>
+                        <outlet property="infoLabel" destination="U0L-sh-5VZ" id="xpR-Sk-z5J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
