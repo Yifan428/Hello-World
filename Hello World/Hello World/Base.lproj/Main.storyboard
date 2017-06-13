@@ -28,14 +28,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E81-E2-dmg">
-                                <rect key="frame" x="171" y="79" width="33" height="30"/>
+                                <rect key="frame" x="171" y="71" width="33" height="30"/>
                                 <state key="normal" title="hello"/>
                                 <connections>
                                     <action selector="helloSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyL-Wa-N22"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VD-2y-ag5">
-                                <rect key="frame" x="170" y="119" width="34" height="30"/>
+                                <rect key="frame" x="170" y="111" width="34" height="30"/>
                                 <state key="normal" title="clear"/>
                                 <connections>
                                     <action selector="clearSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nAj-NQ-drV"/>
@@ -45,7 +45,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1VD-2y-ag5" firstAttribute="top" secondItem="E81-E2-dmg" secondAttribute="bottom" constant="10" id="IRH-pt-CUy"/>
-                            <constraint firstItem="E81-E2-dmg" firstAttribute="top" secondItem="U0L-sh-5VZ" secondAttribute="bottom" constant="18" id="Mb8-fl-Rbb"/>
+                            <constraint firstItem="E81-E2-dmg" firstAttribute="top" secondItem="U0L-sh-5VZ" secondAttribute="bottom" constant="10" id="Mb8-fl-Rbb"/>
                             <constraint firstItem="U0L-sh-5VZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RTU-9y-W3P"/>
                             <constraint firstItem="U0L-sh-5VZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="XLd-lL-5ff"/>
                             <constraint firstItem="E81-E2-dmg" firstAttribute="centerX" secondItem="U0L-sh-5VZ" secondAttribute="centerX" id="ZKU-Fm-feY"/>
